@@ -1,3 +1,5 @@
+var currentUser;          //put this right after you start script tag before writing any functions.
+
 function populateUserInfo() {
     firebase.auth().onAuthStateChanged(user => {
         // Check if user is signed in:
